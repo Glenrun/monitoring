@@ -1,0 +1,14 @@
+
+1. Proxy setting
+   1. Close any running IntelliJ IDEA instances
+   1. Add this line to your idea.properties file:
+    java.net.useSystemProxies=true
+   1. Start IntelliJ, go to File – Settings – HTTP Proxy, select "Auto-detect proxy settings"
+1. Maven proxy setting
+   <proxy>
+      <id>astrill</id>
+      <active>true</active>
+      <protocol>https</protocol>
+      <host>127.0.0.1</host>
+      <port>8281</port><!-- check your own proxy server port from system proxy settings -->
+    </proxy>
